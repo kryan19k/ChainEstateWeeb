@@ -212,7 +212,7 @@ export function SignupForm() {
           <Button
             type="submit"
             className="w-full"
-            disabled={isLoading || (RECAPTCHA_SITE_KEY && !recaptchaToken)}
+            disabled={isLoading || (!!RECAPTCHA_SITE_KEY && !recaptchaToken)}
           >
             {isLoading ? (
               <div className="flex items-center gap-2">
