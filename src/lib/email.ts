@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 // Create transporter for sending emails
 const createTransporter = () => {
-  return nodemailer.createTransporter({
+  return nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: Number.parseInt(process.env.SMTP_PORT || '587'),
     secure: false,

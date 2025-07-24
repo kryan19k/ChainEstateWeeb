@@ -18,8 +18,15 @@ export const verifyRecaptcha = async (token: string): Promise<boolean> => {
 
     const data = await response.json();
 
-    // Check if verification was successful and score is above threshold
-    return data.success && data.score >= 0.5;
+    // For reCAPTCHA v2: just check success
+    // For reCAPTCHA v3: check success and score
+    if (data.score !== undefined) {
+      // reCAPTCHA v3 Enterprise - check score
+      return data.success && data.score >= 0.5;
+    } else {
+      // reCAPTCHA v2 - just check success
+      return data.success;
+    }
   } catch (error) {
     console.error('reCAPTCHA verification failed:', error);
     return false;
