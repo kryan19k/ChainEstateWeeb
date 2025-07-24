@@ -10,13 +10,13 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3 hover-scale">
-            <div className="w-10 h-10 relative animate-pulse-glow">
+            <div className="w-10 h-10 relative group">
               <Image
                 src="/logo.png"
                 alt="ChainEstate Logo"
                 width={40}
                 height={40}
-                className="rounded-lg shadow-cyan"
+                className="rounded-lg transition-transform duration-300 group-hover:animate-rotate-slow"
               />
             </div>
             <span className="text-2xl font-bold text-gradient-cyan">
