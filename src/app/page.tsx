@@ -265,24 +265,17 @@ export default function HomePage() {
                         </div>
                       </div>
                       
-                      {/* Screen content - Property Investment */}
-                      <div className="px-6 py-4">
-                        <h4 className="text-white text-xl font-bold mb-6">Featured Properties</h4>
-                        
-                        <div className="bg-gray-600 dark:bg-gray-700 rounded-xl p-4 mb-4 hover:bg-gray-500 dark:hover:bg-gray-600 transition-colors">
-                          <div className="w-full h-32 bg-gradient-to-r from-cyan-400 to-cyan-600 rounded-lg mb-3 flex items-center justify-center">
-                            <Building className="w-8 h-8 text-white" />
-                          </div>
-                          <h5 className="text-white font-semibold">Manhattan Apartment</h5>
-                          <p className="text-gray-200 dark:text-gray-300 text-sm">2 Bedroom Studio Apartment</p>
-                          <div className="flex justify-between items-center mt-3">
-                            <span className="text-cyan-400 font-bold">$250</span>
-                            <span className="text-gray-300 dark:text-gray-400 text-sm">Min. Investment</span>
-                          </div>
-                        </div>
-
-                        <div className="bg-cyan-600 rounded-xl p-4 text-center">
-                          <span className="text-white font-semibold">Invest Now</span>
+                      {/* Screen content - Invest Screenshot */}
+                      <div className="px-2 py-2 h-full">
+                        <div className="w-full h-[calc(100%-60px)] rounded-2xl overflow-hidden">
+                          <Image
+                            src="/IMG_2548.png"
+                            alt="ChainEstate Invest Screen"
+                            width={350}
+                            height={600}
+                            className="w-full h-full object-cover"
+                            priority
+                          />
                         </div>
                       </div>
                     </div>
@@ -316,36 +309,17 @@ export default function HomePage() {
                         </div>
                       </div>
                       
-                      {/* Screen content - Wallet */}
-                      <div className="px-6 py-4">
-                        <div className="text-center mb-6">
-                          <p className="text-gray-400 text-sm">Total balance</p>
-                          <h4 className="text-white text-4xl font-bold">$12,850.00</h4>
-                        </div>
-                        
-                        <div className="flex space-x-4 mb-6">
-                          <div className="flex-1 bg-gray-700 rounded-xl p-3 text-center">
-                            <Wallet className="w-6 h-6 text-cyan-400 mx-auto mb-1" />
-                            <span className="text-white text-sm">Withdraw</span>
-                          </div>
-                          <div className="flex-1 bg-cyan-600 rounded-xl p-3 text-center">
-                            <TrendingUp className="w-6 h-6 text-white mx-auto mb-1" />
-                            <span className="text-white text-sm">Reinvest</span>
-                          </div>
-                        </div>
-
-                        <div className="space-y-4">
-                          <h5 className="text-white font-semibold">My earnings</h5>
-                          <div className="bg-gray-700 rounded-lg p-3">
-                            <div className="flex justify-between items-center mb-2">
-                              <span className="text-gray-300 text-sm">December 2024</span>
-                              <span className="text-cyan-400 font-semibold">+$420.50</span>
-                            </div>
-                            <div className="flex justify-between items-center">
-                              <span className="text-gray-300 text-sm">Net returns to date</span>
-                              <span className="text-green-400 font-semibold">8.9%</span>
-                            </div>
-                          </div>
+                      {/* Screen content - Earn Screenshot */}
+                      <div className="px-2 py-2 h-full">
+                        <div className="w-full h-[calc(100%-80px)] rounded-2xl overflow-hidden">
+                          <Image
+                            src="/IMG_2543.png"
+                            alt="ChainEstate Earn Screen"
+                            width={350}
+                            height={600}
+                            className="w-full h-full object-cover"
+                            priority
+                          />
                         </div>
                       </div>
                     </div>
@@ -379,36 +353,17 @@ export default function HomePage() {
                         </div>
                       </div>
                       
-                      {/* Screen content - Portfolio */}
-                      <div className="px-6 py-4">
-                        <div className="mb-6">
-                          <div className="w-full h-24 bg-gradient-to-r from-cyan-400 to-cyan-600 rounded-lg mb-3 flex items-center justify-center">
-                            <Home className="w-8 h-8 text-white" />
-                          </div>
-                          <h4 className="text-white text-lg font-bold">Premium 3-bedroom apartment</h4>
-                          <p className="text-gray-300 text-sm">Apartment • Miami • 1,400 sqft</p>
-                        </div>
-                        
-                        <div className="space-y-4">
-                          <div className="flex justify-between items-center">
-                            <span className="text-gray-300">Current valuation</span>
-                            <span className="text-cyan-400 font-bold">$1,850,000</span>
-                          </div>
-                          
-                          <div className="flex justify-between items-center">
-                            <span className="text-gray-300">Amount invested</span>
-                            <span className="text-white font-semibold">$10,000</span>
-                          </div>
-                          
-                          <div className="flex justify-between items-center">
-                            <span className="text-gray-300">Net returns to date</span>
-                            <span className="text-green-400 font-semibold">↗ 12.3%</span>
-                          </div>
-                          
-                          <div className="flex justify-between items-center">
-                            <span className="text-gray-300">Total earnings to date</span>
-                            <span className="text-cyan-400 font-bold">$1,230</span>
-                          </div>
+                      {/* Screen content - Track Screenshot */}
+                      <div className="px-2 py-2 h-full">
+                        <div className="w-full h-[calc(100%-70px)] rounded-2xl overflow-hidden">
+                          <Image
+                            src="/IMG_2549.png"
+                            alt="ChainEstate Track Screen"
+                            width={400}
+                            height={600}
+                            className="w-full h-full object-cover"
+                            priority
+                          />
                         </div>
                       </div>
                     </div>
